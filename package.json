@@ -9,7 +9,7 @@
   },
   "author": "Eric Sun",
   "scripts": {
-    "deploy" : "gatsby build && gh-pages -d public -b master"
+    "deploy:github": "npm run build && node ./scripts/deploy-github"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.9.4",
@@ -31,5 +31,8 @@
     "styled-components": "^4.1.2",
     "typography": "^0.16.18",
     "typography-theme-bootstrap": "^0.16.18"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.0"
   }
 }
