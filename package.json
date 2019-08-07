@@ -1,15 +1,20 @@
 {
   "name": "suneric98.github.io",
   "version": "1.0.0",
-  "description": "Personal website",
+  "description": "My personal website",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/suneric98/suneric98.github.io"
+    "url": "https://github.com/email2vimalraj/suneric98.github.io"
   },
   "author": "Eric Sun",
   "scripts": {
-    "deploy:github": "npm run build && node ./scripts/deploy-github"
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "now-build": "npm run build",
+    "deploy" : "gatsby build && gh-pages -d public -b master"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.9.4",
@@ -31,8 +36,5 @@
     "styled-components": "^4.1.2",
     "typography": "^0.16.18",
     "typography-theme-bootstrap": "^0.16.18"
-  },
-  "devDependencies": {
-    "gh-pages": "^2.1.0"
   }
 }
