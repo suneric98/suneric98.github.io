@@ -14,7 +14,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "now-build": "npm run build",
-    "deploy" : "gatsby build && gh-pages -d public -b master"
+    "deploy:github": "npm run build && node ./scripts/deploy-github",
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.9.4",
